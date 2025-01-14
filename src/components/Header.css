@@ -9,8 +9,6 @@
     top: 0; /* Positionne l'élément en haut de la page */
     z-index: 1000; /* Assure que l'élément reste au-dessus des autres éléments */
     border-radius: 2vw;
-    margin-right: 1%;
-    margin-left: 1%;
     margin-top: 1%;
     width: 90%;
     max-width: 1200px; /* Limite maximale de la largeur */

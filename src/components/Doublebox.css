@@ -6,8 +6,6 @@
     font-family: 'Cursive', sans-serif;
     gap: 0.2%;
     box-sizing: border-box; /* Ajoutez cette ligne */
-    margin-left: 1%;
-    margin-right: 1%;
     margin-top: 1%;
 }
 
