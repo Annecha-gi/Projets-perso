@@ -1,0 +1,51 @@
+.footer {
+    background-color: #F8E4E3; /* Définit la couleur de fond */
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vw;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-content {
+    font-family: 'Cursive', sans-serif;
+    display: flex;
+    align-items: start;
+    text-align: left;
+    justify-content: start;
+    width: 100%;
+    gap: 50%;
+}
+
+.p9 {
+    font-family: 'Cursive', sans-serif;
+    font-weight: 150;
+    color: #d93b3b;
+    font-size: 1vw;
+    text-align: start;
+}
+
+.contact-button2 {
+    margin-top: 1.5%;
+    background-color: #d93b3b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Cursive', sans-serif;
+    font-size: 1vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-button2:hover {
+    background-color: #b32a2a;
+}

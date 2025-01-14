@@ -1,0 +1,59 @@
+.header {
+    background-color: #F8E4E3; /* Définit la couleur de fond */
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Fixe la position de l'élément */
+    top: 0; /* Positionne l'élément en haut de la page */
+    z-index: 1000; /* Assure que l'élément reste au-dessus des autres éléments */
+    border-radius: 2vw;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 1%;
+    width: 90%;
+    max-width: 1200px; /* Limite maximale de la largeur */
+    box-sizing: border-box; /* Ajoutez cette ligne */
+}
+
+
+
+.header nav ul {
+    list-style: none; /* Supprime les puces de la liste */
+    display: flex; /* Utilise un modèle de boîte flexible pour les éléments enfants */
+    justify-content: flex-start; /* Aligne les éléments de la liste au début */
+    padding: 0; /* Supprime le padding par défaut */
+    margin: 0; /* Supprime la marge par défaut */
+}
+
+.header nav ul li {
+    margin: 0 15px; /* Ajoute de l'espace entre les éléments de la liste */
+}
+
+.header nav ul li a {
+    position: relative; /* Définit la position relative pour l'élément */
+    text-decoration: none; /* Supprime la décoration de texte (soulignement) */
+    color: #D93A56; /* Définit la couleur du texte */
+    transition: color 0.4s ease-in-out; /* Ajoute une transition pour la couleur du texte */
+}
+
+.header nav ul li a::after {
+    content: ''; /* Crée un pseudo-élément vide */
+    position: absolute; /* Positionne le pseudo-élément de manière absolue */
+    top: 0; /* Positionne le pseudo-élément en haut */
+    left: 0; /* Positionne le pseudo-élément à gauche */
+    width: 100%; /* Définit la largeur à 100% de l'élément parent */
+    height: 100%; /* Définit la hauteur à 100% de l'élément parent */
+    background: rgba(255, 255, 255, 0); /* Définit un fond blanc transparent */
+    opacity: 0; /* Définit l'opacité à 0 (invisible) */
+    transition: opacity 0.4s ease-in-out; /* Ajoute une transition pour l'opacité */
+}
+
+.header nav ul li a:hover {
+    color: #fbc1c1; /* Change la couleur du texte au survol */
+}
+
+.header nav ul li a:hover::after {
+    opacity: 1; /* Affiche l'effet de fumée blanche au survol */
+}
