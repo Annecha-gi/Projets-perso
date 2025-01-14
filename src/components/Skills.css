@@ -19,10 +19,10 @@
 }
 
 .h1b {
-        font-family: 'Cursive', sans-serif;
-        font-weight: bold;
-        color: #d93b3b;
-        margin-left: 2%;
+    font-family: 'Cursive', sans-serif;
+    font-weight: bold;
+    color: #d93b3b;
+    margin-left: 2%;
 }
 
 /* Style pour les éléments de défilement horizontal */
@@ -109,13 +109,42 @@
 .item-12 {
     background-image: url("/public/Image/RE.png"); /* Image de fond */
 }
+
 .item-13 {
     background-image: url("/public/Image/SQL.png"); /* Image de fond */
 }
+
 .item-14 {
     background-image: url("/public/Image/Office.png"); /* Image de fond */
 }
 
+/* Media Queries pour rendre le design responsive */
+@media (max-width: 768px) {
+    .skills-container {
+        padding: 10px; /* Réduit l'espace intérieur */
+    }
 
+    .horizontal-scroll-item {
+        height: 80px; /* Réduit la hauteur */
+        width: 120px; /* Réduit la largeur */
+    }
 
+    .h1b {
+        font-size: 1.5em; /* Réduit la taille de la police */
+    }
+}
 
+@media (max-width: 480px) {
+    .skills-container {
+        padding: 5px; /* Réduit encore l'espace intérieur */
+    }
+
+    .horizontal-scroll-item {
+        height: 60px; /* Réduit encore la hauteur */
+        width: 100px; /* Réduit encore la largeur */
+    }
+
+    .h1b {
+        font-size: 1.2em; /* Réduit encore la taille de la police */
+    }
+}

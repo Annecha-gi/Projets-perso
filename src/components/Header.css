@@ -15,8 +15,6 @@
     box-sizing: border-box; /* Ajoutez cette ligne */
 }
 
-
-
 .header nav ul {
     list-style: none; /* Supprime les puces de la liste */
     display: flex; /* Utilise un modèle de boîte flexible pour les éléments enfants */
@@ -54,4 +52,37 @@
 
 .header nav ul li a:hover::after {
     opacity: 1; /* Affiche l'effet de fumée blanche au survol */
+}
+
+/* Media Queries pour rendre le header responsive */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 5px;
+        gap: 5px;
+    }
+
+    .header nav ul li {
+        margin: 5px 0;
+    }
+
+    .header nav ul li a {
+        font-size: 14px;
+    }
 }

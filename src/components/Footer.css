@@ -49,3 +49,36 @@
 .contact-button2:hover {
     background-color: #b32a2a;
 }
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        width: 90%;
+        padding: 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .p9, .contact-button2 {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .footer-content {
+        gap: 10px;
+    }
+
+    .p9, .contact-button2 {
+        font-size: 3vw;
+    }
+}

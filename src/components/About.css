@@ -9,12 +9,12 @@
     border-radius: 2vw;
     margin-top: 7%;
     width: 100%;
-    box-sizing: border-box; /* Ajoutez cette ligne */
+    box-sizing: border-box;
+    flex-wrap: wrap; /* Ajouté pour permettre le wrap des éléments */
 }
 
-
 .image-box {
-    background-image: url('/public/Image/Annecha12.png'); /* Correct the URL */
+    background-image: url('/public/Image/Annecha12.png');
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -24,7 +24,6 @@
     text-align: right;
 }
 
-/* Style pour la vidéo */
 .video-box {
     width: 48%;
     height: 70vh;
@@ -41,7 +40,6 @@
     border-radius: 10px;
 }
 
-/* Style pour la boîte contenant le texte */
 .text-box {
     display: flex;
     flex-direction: column;
@@ -54,7 +52,6 @@
     text-align: right;
 }
 
-/* Style pour les titres et paragraphes dans la boîte de texte */
 .text-box h1,
 .text-box p {
     color: #fff;
@@ -65,10 +62,61 @@
     font-family: 'Cursive', sans-serif;
     text-align: right;
     margin-right: 5%;
-    cursor: pointer; /* Corrected for better readability */
+    cursor: pointer;
 }
 
 .text-box h1::selection,
 .text-box p::selection {
     -webkit-text-fill-color: #fff;
+}
+
+/* Media Queries pour rendre le design responsive */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-box,
+    .video-box,
+    .text-box {
+        width: 90%;
+        height: auto;
+    }
+
+    .text-box h1,
+    .text-box p {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .image-box,
+    .video-box,
+    .text-box {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-box h1,
+    .text-box p {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+        gap: 5px;
+    }
+
+    .text-box h1,
+    .text-box p {
+        font-size: 6vw;
+    }
 }

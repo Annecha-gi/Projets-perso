@@ -26,3 +26,26 @@ section {
   font-family: 'Cursive', sans-serif;
   font-weight: bold;
 }
+
+/* Media queries pour rendre le design responsive */
+@media (max-width: 768px) {
+  .App-header {
+    padding: 15px;
+    text-align: center;
+  }
+
+  section {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header {
+    padding: 10px;
+    text-align: center;
+  }
+
+  section {
+    margin: 5px;
+  }
+}
