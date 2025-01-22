@@ -1,0 +1,121 @@
+/* Style pour le conteneur des compétences */
+.skills-container {
+    align-items: center; /* Centre les éléments verticalement */
+    justify-content: center;
+    padding: 20px; /* Ajoute un espace intérieur de 20px */
+    background-color: #fefefe; /* Couleur de fond blanche */
+    border-radius: 1vw; /* Bords arrondis */
+    overflow: hidden; /* Cache le débordement */
+    width: 100%; /* Ajuste la largeur à 100% */
+    white-space: nowrap; /* Empêche le retour à la ligne */
+    position: relative; /* Position relative */
+}
+
+.skills {
+    display: flex; /* Utilise le modèle de boîte flexible */
+    flex-direction: column; /* Aligne les éléments en ligne */
+    height: 15%;
+    margin-top: 1%;
+}
+
+.h1b {
+        font-family: 'Cursive', sans-serif;
+        font-weight: bold;
+        color: #d93b3b;
+        margin-left: 2%;
+}
+
+/* Style pour les éléments de défilement horizontal */
+.horizontal-scroll {
+    display: flex; /* Utilise le modèle de boîte flexible */
+    gap: 20px; /* Espace entre les éléments */
+    width: 100%; /* Ajuste la largeur à 100% */
+    animation: scroll 60s linear infinite; /* Animation de défilement */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Animation pour le défilement horizontal */
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Départ à gauche */
+    }
+    100% {
+        transform: translateX(-50%); /* Défilement de moitié */
+    }
+}
+
+/* Style pour les éléments de défilement horizontal */
+.horizontal-scroll-item {
+    height: 100px; /* Hauteur fixe */
+    width: 150px; /* Largeur réduite */
+    background-size: contain; /* Image de fond couvrante */
+    background-repeat: no-repeat;
+    background-position: center; /* Centre l'image de fond */
+    display: inline-block; /* Affichage en ligne */
+    transition: transform 0.4s ease-in-out; /* Transition fluide */
+}
+
+/* Effet au survol des éléments */
+.horizontal-scroll-item:hover {
+    transform: scale(1.5); /* Agrandit l'élément */
+}
+
+/* Couleurs spécifiques pour chaque élément */
+.item-1 {
+    background-image: url("/public/Image/java3.png"); /* Image de fond */
+}
+
+.item-2 {
+    background-image: url("/public/Image/javascript2.png"); /* Image de fond */
+}
+
+.item-3 {
+    background-image: url("/public/Image/php2.png"); /* Image de fond */
+}
+
+.item-4 {
+    background-image: url("/public/Image/python2.png"); /* Image de fond */
+}
+
+.item-5 {
+    background-image: url("/public/Image/S.png"); /* Image de fond */
+}
+
+.item-6 {
+    background-image: url("/public/Image/java3.png"); /* Image de fond */
+}
+
+.item-7 {
+    background-image: url("/public/Image/javascript2.png"); /* Image de fond */
+}
+
+.item-8 {
+    background-image: url("/public/Image/php2.png"); /* Image de fond */
+}
+
+.item-9 {
+    background-image: url("/public/Image/python2.png"); /* Image de fond */
+}
+
+.item-10 {
+    background-image: url("/public/Image/N.png"); /* Image de fond */
+}
+
+.item-11 {
+    background-image: url("/public/Image/r.png"); /* Image de fond */
+}
+
+.item-12 {
+    background-image: url("/public/Image/RE.png"); /* Image de fond */
+}
+.item-13 {
+    background-image: url("/public/Image/SQL.png"); /* Image de fond */
+}
+.item-14 {
+    background-image: url("/public/Image/Office.png"); /* Image de fond */
+}
+
+
+
+

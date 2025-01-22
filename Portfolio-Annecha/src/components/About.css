@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    background-color: #D93A56;
+    border-radius: 2vw;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 6%;
+    width: 100%;
+    box-sizing: border-box; /* Ajoutez cette ligne */
+}
+
+
+.image-box {
+    background-image: url('/public/Image/Annecha12.png'); /* Correct the URL */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(41, 41, 41, 0.106);
+    width: 48%;
+    height: 70vh;
+    text-align: right;
+}
+
+/* Style pour la vidéo */
+.video-box {
+    width: 48%;
+    height: 70vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(41, 41, 41, 0.106);
+    overflow: hidden;
+    text-align: right;
+}
+
+.video-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Style pour la boîte contenant le texte */
+.text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 40%;
+    height: 65vh;
+    padding: 20px;
+    text-align: right;
+}
+
+/* Style pour les titres et paragraphes dans la boîte de texte */
+.text-box h1,
+.text-box p {
+    color: #fff;
+    -webkit-text-stroke: 0.025em #fff;
+    -webkit-text-fill-color: transparent;
+    margin: 5px 0;
+    font-size: 3vw;
+    font-family: 'Cursive', sans-serif;
+    text-align: right;
+    margin-right: 5%;
+    cursor: pointer; /* Corrected for better readability */
+}
+
+.text-box h1::selection,
+.text-box p::selection {
+    -webkit-text-fill-color: #fff;
+}
