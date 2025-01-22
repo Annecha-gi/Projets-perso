@@ -59,12 +59,12 @@
 /* Media Queries pour rendre le header responsive */
 @media (max-width: 768px) {
     .header {
-        flex-direction: column;
+        flex-direction: row;
         padding: 10px;
     }
 
     .header nav ul {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
