@@ -1,0 +1,122 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    background-color: #D93A56;
+    border-radius: 2vw;
+    margin-top: 7%;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap; /* Ajouté pour permettre le wrap des éléments */
+}
+
+.image-box {
+    background-image: url('/public/Image/Annecha12.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(41, 41, 41, 0.106);
+    width: 48%;
+    height: 70vh;
+    text-align: right;
+}
+
+.video-box {
+    width: 48%;
+    height: 70vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(41, 41, 41, 0.106);
+    overflow: hidden;
+    text-align: right;
+}
+
+.video-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 40%;
+    height: 65vh;
+    padding: 20px;
+    text-align: right;
+}
+
+.text-box h1,
+.text-box p {
+    color: #fff;
+    -webkit-text-stroke: 0.025em #fff;
+    -webkit-text-fill-color: transparent;
+    margin: 5px 0;
+    font-size: 3vw;
+    font-family: 'Cursive', sans-serif;
+    text-align: right;
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+.text-box h1::selection,
+.text-box p::selection {
+    -webkit-text-fill-color: #fff;
+}
+
+/* Media Queries pour rendre le design responsive */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-box,
+    .video-box,
+    .text-box {
+        width: 90%;
+        height: auto;
+    }
+
+    .text-box h1,
+    .text-box p {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .image-box,
+    .video-box,
+    .text-box {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-box h1,
+    .text-box p {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+        gap: 5px;
+    }
+
+    .text-box h1,
+    .text-box p {
+        font-size: 6vw;
+    }
+}

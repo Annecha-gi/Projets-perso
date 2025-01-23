@@ -1,0 +1,66 @@
+.container2 {
+    display: flex;
+    flex-direction: row;
+    background-color: #e50e3500;
+    border-radius: 1vw;
+    font-family: 'Cursive', sans-serif;
+    gap: 0.2%;
+    box-sizing: border-box; /* Ajoutez cette ligne */
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+.p5 {
+    font-family: 'Cursive', sans-serif;
+    font-weight: 150;
+    color: #d93b3b;
+    margin: 1% 5%;
+    font-size: 1.5vw;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+.image-box2 {
+    background-color: #D93A56;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: right;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.container3, .image-box2 {
+    width: 50%;
+    height: 70vh;
+    border-radius: 1vw;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.image-box2 img {
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    width: 87%;
+    height: 87%;
+}
+
+
+.image-box2:hover > img {
+    transform: scale(1.1);
+}
+
+.text-box2 {
+    display: flex;
+    font-size: 1.5vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cursive', sans-serif;
+}

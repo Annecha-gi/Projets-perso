@@ -1,0 +1,51 @@
+/* Applique une police de caractères 'Cursive' et une graisse de police en gras à tous les éléments */
+* {
+  font-family: 'Cursive', sans-serif;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Centre le texte et applique une police de caractères 'Cursive' à l'élément avec la classe App */
+.App {
+  font-family: 'Cursive', sans-serif;
+}
+
+/* Définit le style de l'en-tête de l'application avec un fond de couleur, du padding, une couleur de texte blanche, et une police de caractères 'Cursive' en gras */
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  font-family: 'Cursive', sans-serif;
+  font-weight: bold;
+}
+
+/* Ajoute une marge et applique une police de caractères 'Cursive' en gras aux sections */
+section {
+  margin: 20px;
+  font-family: 'Cursive', sans-serif;
+  font-weight: bold;
+}
+
+/* Media queries pour rendre le design responsive */
+@media (max-width: 768px) {
+  .App-header {
+    padding: 15px;
+    text-align: center;
+  }
+
+  section {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header {
+    padding: 10px;
+    text-align: center;
+  }
+
+  section {
+    margin: 5px;
+  }
+}
