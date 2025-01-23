@@ -47,8 +47,10 @@
 
 /* Style pour les éléments de défilement horizontal */
 .horizontal-scroll-item {
-    height: 100px; /* Hauteur fixe */
-    width: 150px; /* Largeur réduite */
+    height: 15vw; /* Utilise des unités relatives pour la hauteur */
+    width: 15vw; /* Utilise des unités relatives pour la largeur */
+    max-height: 150px; /* Limite la hauteur maximale */
+    max-width: 150px; /* Limite la largeur maximale */
     background-size: contain; /* Image de fond couvrante */
     background-repeat: no-repeat;
     background-position: center; /* Centre l'image de fond */
@@ -59,6 +61,21 @@
 /* Effet au survol des éléments */
 .horizontal-scroll-item:hover {
     transform: scale(1.5); /* Agrandit l'élément */
+}
+
+/* Media queries pour améliorer la réactivité */
+@media (max-width: 768px) {
+    .horizontal-scroll-item {
+        height: 20vw; /* Augmente la taille pour les écrans plus petits */
+        width: 20vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .horizontal-scroll-item {
+        height: 25vw; /* Augmente encore la taille pour les très petits écrans */
+        width: 25vw;
+    }
 }
 
 /* Couleurs spécifiques pour chaque élément */
@@ -115,7 +132,3 @@
 .item-14 {
     background-image: url("/public/Image/Office.png"); /* Image de fond */
 }
-
-
-
-
